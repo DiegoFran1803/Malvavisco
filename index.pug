@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title F4N745m4
+
+        //Bootswacht
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/sketchy/bootstrap.min.css")
+        
+        //CSS
+        link(rel="stylesheet", href="style.css")
+    body(class="bg-dark text-white")
+        //Header
+        header
+            div(class="w-100 text-center version-container")
+                span(class="version text-white")
+            nav(class="navbar bg-dark navbar-dark")
+                div(class="container")
+                    //Nivel y Experiencia
+                    div(class="d-flex align-items-center xp-container")
+                        h6(class="badge bg-warning mb-0 me-1 level")
+                        div(class="progress w-100" role="progressbar" aria-label="Warning example" aria-valuemin="0" aria-valuemax="100")
+                            div(class="progress-bar bg-warning xp")
+                    
+                    //Stats
+                    div(class="d-flex justify-content-end align-items-center w-50")
+                        i(class="fa-solid fa-hand-back-fist fa-md me-3 text-danger")
+                            span(class="fs-6 ms-1 text-white strength")
+                        i(class="fa-solid fa-wind fa-md me-3 text-success")
+                            span(class="fs-6 ms-1 text-white agility")
+                        i(class="fa-solid fa-brain fa-md text-info")
+                            span(class="fs-6 ms-1 text-white intelligence")
+
+        //Contenido
+        main
+            //Contenedor
+            div(class="container my-5")
+
+                section
+                    //Titulo
+                    h1(class="text-white text-center") Objetivos
+
+                    //Lista de objetivos
+                    div(class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 objectives")
+
+        script(src="https://kit.fontawesome.com/f3dac0d917.js") 
+        script(src="https://code.jquery.com/jquery-3.7.0.slim.js") 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js")
+        script(src="./js/tools.js")
+        script(src="./js/data.js")
+        script(src="./js/buttons.js")
+        script(src="./js/paint.js")
+
+        script(src="./main.js") 

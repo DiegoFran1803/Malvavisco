@@ -1,0 +1,28 @@
+nav {
+    height: 55px;
+}
+
+.btn-remove:hover {
+    background-color: #333333;
+}
+
+.xp-container {
+    width: 40%;
+}
+
+.version-container {
+    position: absolute;
+    top: 55px;
+    left: 0;
+}
+
+.version {
+    font-size: small;
+    font-weight: 300;
+}
+
+@media (min-width: 900px) {
+    .xp-container {
+        width: 20%;
+    }
+}
