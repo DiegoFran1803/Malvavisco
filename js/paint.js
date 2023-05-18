@@ -2,8 +2,8 @@
 //Pintar Datos
 function paint(user) {
     //Variables
-    let level = user.level;
-    let xp = user.px;
+    let level = parseInt(user.level);
+    let xp = parseInt(user.xp);
     let xpBar = Math.round(user.xp / (user.level + 1));
     let strength = Math.round(parseFloat(user.stats[0]));
     let agility = Math.round(parseFloat(user.stats[1]));
@@ -13,7 +13,8 @@ function paint(user) {
     $('.level').text(user.level);
 
     //Pintar Experiencia
-    if(xp >= (level + 1) * 100) user = levelUp(user);
+    console.log(xp);
+    if(xp >= (level + 1) * 100) user = levelUp(user)
     $('.xp').css('width', xpBar + '%');
     
     //Pintar Stats

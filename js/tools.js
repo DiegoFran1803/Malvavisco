@@ -1,5 +1,5 @@
 //Version
-let version = 'v1.0.0a1'
+let version = 'v1.0a1'
 $('.version').text(version);
 
 //Traer los Datos
@@ -60,7 +60,7 @@ function rewards(user, i, x) {
     user.xp = xp;
     user.stats[0] = strength;
     user.stats[1] = agility;
-    user.stats[2] = strength;
+    user.stats[2] = intelligence;
     localStorage.setItem('user', JSON.stringify(user));
     
     //Retornar nuevo valor
